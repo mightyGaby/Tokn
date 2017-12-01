@@ -39,7 +39,7 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      color: rgba($white, 0);
       &:focus,
       &:hover {
         color: $white;
@@ -74,4 +74,11 @@
       }
     }
   }
+}
+
+footer {
+  color: $gray-600;
+  border-top: 1px solid rgba(33,37,41,.1);
+  background-color: $gray-100;
+  padding: 40px 0;
 }
