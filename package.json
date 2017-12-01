@@ -41,5 +41,12 @@
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",
         "gulp-uglify": "3.0.0"
+    },
+    "scripts": {
+        "gulp": "gulp",
+        "gulp-watch": "gulp dev",
+        "start": "gulp-watch"
+
     }
+
 }
