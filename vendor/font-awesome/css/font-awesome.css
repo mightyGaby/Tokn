@@ -584,7 +584,6 @@
 }
 .fa-heart-o:before {
   content: "\f08a";
-  -webkit-text-stroke: 2px white;
 }
 .fa-sign-out:before {
   content: "\f08b";
@@ -1729,7 +1728,6 @@
 }
 .fa-diamond:before {
   content: "\f219";
-  -webkit-text-stroke: 2px white;
 }
 .fa-ship:before {
   content: "\f21a";
@@ -2226,7 +2224,6 @@
 .fa-drivers-license-o:before,
 .fa-id-card-o:before {
   content: "\f2c3";
-  -webkit-text-stroke: 2px white;
 }
 .fa-quora:before {
   content: "\f2c4";

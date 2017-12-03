@@ -64,6 +64,9 @@
         &:hover {
           color: darken($primary, .1);
         }
+        .logo {
+          display: inline-block;
+        }
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -81,4 +84,8 @@ footer {
   border-top: 1px solid rgba(33,37,41,.1);
   background-color: $gray-100;
   padding: 40px 0;
+}
+
+#contact {
+  padding-top: 4em;
 }

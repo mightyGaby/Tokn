@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Get Tokn v4.0.0-beta.2 ()
+ * Start Bootstrap - Creative v4.0.0-beta.2 ()
  * Copyright 2013-2017 Gaby Ruiz-Funes
- * Licensed under MIT (https://github.com/BlackrockDigital/Tokn/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 body,
 html {
@@ -124,8 +124,6 @@ body {
           color: #b2dcc6; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
             color: #b2dcc6; }
-          #mainNav.navbar-shrink .navbar-brand .logo {
-            display: inline-block; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: #212529; }
@@ -139,11 +137,8 @@ footer {
   background-color: #f8f9fa;
   padding: 40px 0; }
 
-#contact {
-  padding-top: 4em; }
-
 header.masthead {
-  padding-top: 6rem;
+  padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/token.png");
   background-position: center center;
@@ -166,8 +161,7 @@ header.masthead {
       height: 100vh;
       min-height: 650px;
       padding-top: 0;
-      padding-bottom: 0;
-      padding-top: 8rem; }
+      padding-bottom: 0; }
       header.masthead h1 {
         font-size: 3rem; } }
   @media (min-width: 1200px) {
@@ -243,9 +237,6 @@ header.masthead {
 .btn-xl {
   padding: 1rem 2rem; }
 
-.text-secondary {
-  color: #cddbfc !important; }
-
 .btn-primary {
   background-color: #b2dcc6;
   border-color: #b2dcc6; }
@@ -254,20 +245,3 @@ header.masthead {
     background-color: #a0d4b9 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
-
-.modal .logo {
-  max-width: 200px; }
-
-.navbar .logo {
-  height: 30px; }
-
-/*icons on white background*/
-.fa-diamond:before, .fa-id-card-o:before, .fa-heart-o:before {
-  -webkit-text-stroke: 2px white; }
-
-.fa-id-card-o:before, .fa-envelope-0:before {
-  -webkit-text-stroke: 3px white; }
-
-/*icons on secondary background*/
-.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
-  -webkit-text-stroke: 2px #cddbfc; }

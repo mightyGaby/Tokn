@@ -1,6 +1,6 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url('../img/token.png');
   background-position: center center;
@@ -25,6 +25,7 @@ header.masthead {
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
+    padding-top: 8rem;
     h1 {
       font-size: 3rem;
     }
