@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Get Tokn v4.0.0-beta.2 ()
- * Copyright 2013-2017 Gaby Ruiz-Funes
+ * Copyright 2013-2018 Gaby Ruiz-Funes
  * Licensed under MIT (https://github.com/BlackrockDigital/Tokn/blob/master/LICENSE)
  */
 body,
@@ -272,3 +272,19 @@ header.masthead {
 /*icons on secondary background*/
 .fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
   -webkit-text-stroke: 2px #cddbfc; }
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+  display: inline;
+  width: auto;
+  margin-right: 10px; }
+
+#mergeRow-gdpr {
+  margin-top: 20px; }
+
+#mergeRow-gdpr fieldset label {
+  font-weight: normal; }
+
+#mc-embedded-subscribe-form .mc_fieldset {
+  border: none;
+  min-height: 0px;
+  padding-bottom: 0px; }
