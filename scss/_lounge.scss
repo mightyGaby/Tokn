@@ -1,8 +1,13 @@
-h1, h2{
-  font-family: 'Playfair Display', serif;
+h1, h5, h2{
+  font-family: 'cardo', serif;
 }
-h2 {
+
+h2{
   font-style: italic
+}
+
+p {
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 .beta-lounge {
   background-image: url('../img/green-leaves-plant.jpg');
