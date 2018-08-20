@@ -41,7 +41,7 @@ function enterEmail(){
 }
 
 function confirm(){
-  var url = 'https://script.google.com/macros/s/AKfycbynzmFqwpTSJog7gp2rfWMWMkleYQob5-uIe1--BnTkqanbfmk/exec';
+  var url = 'https://script.google.com/macros/s/AKfycbynzmFqwpTSJog7gp2rfWMWMkleYQob5-uIe1--BnTkqanbfmk/exec&callback=?';
   // https://docs.google.com/spreadsheets/d/1FLvQN4ox2lBo21FCrQsYceB-DWEhi9hS0I4tNWxQStI/edit#gid=1828240794
   var redirectUrl = 'faq.html';
   boxReceived = true;
