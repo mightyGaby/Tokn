@@ -272,3 +272,29 @@ header.masthead {
 /*icons on secondary background*/
 .fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
   -webkit-text-stroke: 2px #cddbfc; }
+
+.beta-lounge {
+  background-image: url("../img/green-leaves-plant.jpg");
+  height: 100%;
+  background-color: #003333;
+  background-repeat: no-repeat;
+  background-size: auto 1600px; }
+
+#beta-lounge .container {
+  /*background-color: #edefee;*/
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #0a0f0f; }
+
+#password input {
+  margin-top: 35%;
+  width: 350px; }
+
+.reserve {
+  opacity: 0; }
+
+.fadein {
+  opacity: 1;
+  -webkit-transition: opacity 6s;
+  -moz-transition: opacity 6s;
+  -o-transition: opacity 6s;
+  transition: opacity 6s; }
