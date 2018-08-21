@@ -2,12 +2,12 @@ var email, boxReceived;
 //submit e-mail
 //match to array of e-mails
 //
-var betaBabes = [
-"aderonke.adedokun@gmail.com", "ß ameltz1029@gmail.com",
+var betaBabes =  ["aderonke.adedokun@gmail.com",
+"ameltz1029@gmail.com",
 "amjordan92@gmail.com",
 "andrewlanebaker@gmail.com",
 "deb@designdance.net",
-"Kimmah.shah@gmail.com",
+"kimmah.shah@gmail.com",
 "maxinenicolemua@gmail.com",
 "natalie.meltzer@gmail.com",
 "sabrina.lakhani@insead.edu",
@@ -23,13 +23,13 @@ var betaBabes = [
 "phirany.lim@gmail.com",
 "kelseyleecox@yahoo.com",
 "emily.abbate@gmail.com",
-"Elainaspiekermann@gmail.com",
+"elainaspiekermann@gmail.com",
 "abby.tracy2012@gmail.com",
- "jlf4689@gmail.com",
+"jlf4689@gmail.com",
 "raissanfg@gmail.com"];
 
 function enterEmail(){
-  email = $('input').val();
+  email = $('input').val().toLowerCase();
   if(betaBabes.includes(email)){
     console.log('yes');
     $('#password').fadeOut();
