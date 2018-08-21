@@ -1,7 +1,5 @@
-var email, boxReceived;
-//submit e-mail
-//match to array of e-mails
-//
+var email, boxReceived, sequence_type, pack_sequence = [];
+
 var betaBabes =  ["aderonke.adedokun@gmail.com",
 "ameltz1029@gmail.com",
 "amjordan92@gmail.com",
@@ -28,6 +26,30 @@ var betaBabes =  ["aderonke.adedokun@gmail.com",
 "jlf4689@gmail.com",
 "raissanfg@gmail.com"];
 
+var betaInfo = [{
+  "email": "gaby@something",
+  "box_type": "cycle",
+  "pack_sequence": 
+    {
+      "first_pack": "blah",
+      "second_pack": "orange",
+      "third_pack": "pomelo",
+      "fourth_pack": "lime"
+    }
+  },
+  {
+  "email": "something",
+  "box_type": "cycle",
+  "pack_sequence": 
+    {
+      "first_pack": "blah",
+      "second_pack": "orange",
+      "third_pack": "pomelo",
+      "fourth_pack": "lime"
+    }
+}];
+
+
 function enterEmail(){
   email = $('input').val().toLowerCase();
   if(betaBabes.includes(email)){
@@ -37,7 +59,16 @@ function enterEmail(){
   } else {
     $('.errormsg').text('It appears you are not on our list. Please use the e-mail you used to register or reach out to themightygaby@dailytokn.com')
   }
-  //else populate <p class="errormsg"></p> w message
+}
+
+function getInfo(email){
+  for (var i in betaInfo){
+    if(email == betaInfo[i].email){
+      sequence_type =  betaInfo[i].box_type;
+      pack_sequence.push(betaInfo[i].pack_sequence);
+      console.log(pack_sequence.length)
+    }
+  }
 }
 
 function confirm(){
