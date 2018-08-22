@@ -41,33 +41,6 @@ function enterEmail(){
 }
 
 function confirm(){
-  var url = 'https://script.google.com/macros/s/AKfycbynzmFqwpTSJog7gp2rfWMWMkleYQob5-uIe1--BnTkqanbfmk/exec&callback=?';
-  // https://docs.google.com/spreadsheets/d/1FLvQN4ox2lBo21FCrQsYceB-DWEhi9hS0I4tNWxQStI/edit#gid=1828240794
-  var redirectUrl = 'faq.html';
-  boxReceived = true;
-  var info = {
-    "email": email,
-    "received": boxReceived
-  };
-  console.log(info);
-
-  request = $.ajax({
-       url: "https://script.google.com/macros/s/AKfycbynzmFqwpTSJog7gp2rfWMWMkleYQob5-uIe1--BnTkqanbfmk/exec",
-       type: "post",
-       data: info,
-       dataType: 'jsonp',
-       headers: {
-          'Access-Control-Allow-Origin':'*',
-          'Access-Control-Allow-Methods':'GET',
-          'Access-Control-Allow-Headers':'application/json',
-        },
-        success: function(data) {
-          console.log(data);
-          $('#confirm').text("Success! What's next?")
-        },
-        error: function(error) {
-          console.warn("FAIL....=================");
-        }
-   });
+  $('#personal-instructions')
 }
 
