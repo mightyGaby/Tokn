@@ -199,10 +199,10 @@ function findIndex(val, array){
 
 //set personalized variables
 function getInfo(email){
-  sequence_type = betaInfo[index].sequence_type;
-  personal_hint = betaInfo[index].personal_hint;
+  //sequence_type = betaInfo[index].sequence_type;
+  //personal_hint = betaInfo[index].personal_hint;
   first_name = betaInfo[index].first_name;
-  pack_sequence.push(betaInfo[index].pack_sequence);
+  //pack_sequence.push(betaInfo[index].pack_sequence);
   console.log(first_name,sequence_type);
   greeting += first_name;
 }
