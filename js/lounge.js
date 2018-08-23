@@ -25,7 +25,7 @@ var betaBabes =  ["aderonke.adedokun@gmail.com",
 "elainaspiekermann@gmail.com",
 "abby.tracy2012@gmail.com",
 "jlf4689@gmail.com",
-"raissanfg@gmail.com",""];
+"raissanfg@gmail.com"];
 
 var betaInfo = [{
   "email": "abby.tracy2012@gmail.com",
