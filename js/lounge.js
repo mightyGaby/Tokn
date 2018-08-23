@@ -92,6 +92,6 @@ function getInfo(email){
 
 function confirm(){
   console.log("confirm");
-  $('#personal-instructions').html('<h3 id="mySecondDiv">instructions for you</h3>')
+  $('#personal-instructions').html('<img src="img/logo_half_sun_up.png" class="my-2" width="auto" height="25"/><h5 id="mySecondDiv">instructions for you</h5><div></div><img src="img/logo_half_sun_down.png" class="my-2" width="auto" height="25"/>')
 }
 
