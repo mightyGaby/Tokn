@@ -1,5 +1,5 @@
-var index, email, first_name, boxReceived, sequence_type, personal_hint, pack_sequence = [];
-var greeting = "Welcome, " + first_name;
+  var index, email, first_name, boxReceived, sequence_type, personal_hint, pack_sequence = [];
+var greeting = "Welcome, ";
 
 var betaBabes =  ["aderonke.adedokun@gmail.com",
 "ameltz1029@gmail.com",
@@ -28,7 +28,7 @@ var betaBabes =  ["aderonke.adedokun@gmail.com",
 "raissanfg@gmail.com",""];
 
 var betaInfo = [{
-  "email": "gaby@something",
+  "email": "",
   "first_name": "Gaby",
   "sequence_type": "cycle",
   "pack_sequence": 
@@ -87,6 +87,7 @@ function getInfo(email){
   first_name = betaInfo[index].first_name;
   pack_sequence.push(betaInfo[index].pack_sequence);
   console.log(first_name,sequence_type);
+  greeting += first_name;
 }
 
 function confirm(){
