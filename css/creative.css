@@ -317,6 +317,9 @@ p {
   -o-transition: opacity 6s;
   transition: opacity 6s; }
 
+input {
+  text-align: center; }
+
 ::-webkit-input-placeholder {
   text-align: center; }
 
