@@ -1,4 +1,4 @@
-  var index, email, first_name, boxReceived, sequence_type, personal_hint, pack_sequence = [];
+  var index, email, first_name, boxReceived, sequence_type, start_day, personal_hint, pack_sequence = [];
 var greeting = "Welcome, ";
 
 var betaBabes =  ["aderonke.adedokun@gmail.com",
@@ -33,17 +33,17 @@ var betaInfo = [{
   "sequence_type": "cycle",
   "pack_sequence": [
     {
-      "first_pack": "blah",
-      "second_pack": "orange",
+      "first_pack": "lime",
+      "second_pack": "blah",
       "third_pack": "pomelo",
-      "fourth_pack": "lime"
+      "fourth_pack": "orange"
     }],
     "personal_hint": ""
   },
   {
     "email": "sedelste@gmail.com",
     "first_name": "Shanleigh",
-    "sequence_type": "cycle",
+    "sequence_type": "universe",
     "pack_sequence": [
       {
         "first_pack": "blah",
@@ -57,19 +57,13 @@ var betaInfo = [{
       "email": "shonaliditz@gmail.com",
       "first_name": "Shonali",
       "sequence_type": "cycle",
-      "pack_sequence": [
-        {
-          "first_pack": "blah",
-          "second_pack": "orange",
-          "third_pack": "pomelo",
-          "fourth_pack": "lime"
-        }],
-        "personal_hint": ""
+      "start_day": 8,
+      "personal_hint": ""
       },
       {
         "email": "tillywinx@gmail.com",
         "first_name": "Tilly",
-        "sequence_type": "cycle",
+        "sequence_type": "universe",
         "pack_sequence": [
           {
             "first_pack": "blah",
@@ -85,10 +79,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "blah",
+        "first_pack": "pomelo",
         "second_pack": "orange",
-        "third_pack": "pomelo",
-        "fourth_pack": "lime"
+        "third_pack": "lime",
+        "fourth_pack": "blah"
       }],
       "personal_hint": ""
     },
@@ -98,10 +92,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "blah",
-        "second_pack": "orange",
+        "first_pack": "lime",
+        "second_pack": "blah",
         "third_pack": "pomelo",
-        "fourth_pack": "lime"
+        "fourth_pack": "orange"
       }],
       "personal_hint": ""
     },
@@ -111,10 +105,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "blah",
-        "second_pack": "orange",
-        "third_pack": "pomelo",
-        "fourth_pack": "lime"
+        "first_pack": "orange",
+        "second_pack": "lime",
+        "third_pack": "blah",
+        "fourth_pack": "pomelo"
       }],
       "personal_hint": ""
     },
@@ -122,14 +116,8 @@ var betaInfo = [{
     "email": "lundgren.jl@gmail.com",
     "first_name": "Jessica",
     "sequence_type": "cycle",
-    "pack_sequence": [
-      {
-        "first_pack": "blah",
-        "second_pack": "orange",
-        "third_pack": "pomelo",
-        "fourth_pack": "lime"
-      }],
-      "personal_hint": ""
+    "start_day": 7,
+    "personal_hint": ""
     },
   {
     "email": "Kimmah.shah@gmail.com",
@@ -137,10 +125,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "blah",
-        "second_pack": "orange",
+        "first_pack": "lime",
+        "second_pack": "blah",
         "third_pack": "pomelo",
-        "fourth_pack": "lime"
+        "fourth_pack": "orange"
       }],
       "personal_hint": ""
     },
@@ -150,10 +138,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "blah",
-        "second_pack": "orange",
+        "first_pack": "lime",
+        "second_pack": "blah",
         "third_pack": "pomelo",
-        "fourth_pack": "lime"
+        "fourth_pack": "orange"
       }],
       "personal_hint": ""
     },
@@ -161,13 +149,7 @@ var betaInfo = [{
   "email": "amjordan92@gmail.com",
   "first_name": "Alexis",
   "sequence_type": "cycle",
-  "pack_sequence": [
-    {
-      "first_pack": "blah",
-      "second_pack": "orange",
-      "third_pack": "pomelo",
-      "fourth_pack": "lime"
-    }],
+  "start_day": 21,
     "personal_hint": "your personal instructions"
 }];
 
@@ -199,16 +181,24 @@ function findIndex(val, array){
 
 //set personalized variables
 function getInfo(email){
-  //sequence_type = betaInfo[index].sequence_type;
   //personal_hint = betaInfo[index].personal_hint;
   first_name = betaInfo[index].first_name;
-  //pack_sequence.push(betaInfo[index].pack_sequence);
-  console.log(first_name,sequence_type);
   greeting += first_name;
 }
 
 function confirm(){
-  console.log("confirm");
-  $('#personal-instructions').html('<img src="img/logo_half_sun_up.png" class="my-2" width="auto" height="25"/><h5 id="mySecondDiv">instructions for you</h5><div></div><img src="img/logo_half_sun_down.png" class="my-2" width="auto" height="25"/>')
+  var content, info;
+    if (betaInfo[index].pack_sequence){
+    sequence_type = betaInfo[index].sequence_type;
+    pack_sequence.push(betaInfo[index].pack_sequence);
+  } else if (betaInfo[index].start_day){
+    start_day = betaInfo[index].start_day;
+    console.log(start_day);
+    content = 'start day: ' + start_day;
+  }
+
+  info = '<img src="img/logo_half_sun_up.png" class="my-2" width="auto" height="25"/><h5 id="mySecondDiv">instructions for you</h5><div>' + content + '</div><img src="img/logo_half_sun_down.png" class="my-2" width="auto" height="25"/>'
+  console.log(info);
+  $('#personal-instructions').html(info);
 }
 
