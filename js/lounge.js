@@ -184,9 +184,9 @@ function confirm(){
   } else if (betaInfo[index].start_day){
     start_day = betaInfo[index].start_day;
     if(sequence_type=="universe"){
-      content = first_name + ', tokn sequence begins with pod: ' + start_day + ', coinciding with the full moon and a burst of high energy. Throughought the yins and yangs of the moon cycle, tokn dosages will harmonize with those lunar frequencies.';
+      content = '<p>' + first_name + ', tokn sequence begins with pod: ' + start_day + ', coinciding with the full moon and a burst of high energy.</p><p>Throughout the yins and yangs of the moon cycle, tokn dosages will harmonize with those lunar frequencies.</p>';
     } else {
-      content = first_name + ', tokn sequence begins with pod: ' + start_day + '. Each subsequent day until the pods are empty, tokn dosages will complement where you are in your cycle, whether you need to mellow out or exude vibrance.' ;
+      content = '<p>' + first_name + ', tokn sequence begins with pod: ' + start_day + '.</p><p>Each subsequent day until the pods are empty, tokn dosages will complement where you are in your cycle, whether you need to mellow out or exude vibrance.</p>';
     }
   }
 
