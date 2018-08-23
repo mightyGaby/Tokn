@@ -25,7 +25,9 @@ var betaBabes =  ["aderonke.adedokun@gmail.com",
 "elainaspiekermann@gmail.com",
 "abby.tracy2012@gmail.com",
 "jlf4689@gmail.com",
-"raissanfg@gmail.com"];
+"raissanfg@gmail.com",
+"themightygaby@dailytokn.com",
+"andrew@dailytokn.com"];
 
 var betaInfo = [{
   "email": "abby.tracy2012@gmail.com",
@@ -159,8 +161,7 @@ var betaInfo = [{
         "fourth_pack": "blah"
       }],
       "personal_hint": ""
-    }
-  ];
+    }];
 
 // var val = "something";
 // // var index = betaInfo.findIndex(function(item, i){
