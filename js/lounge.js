@@ -139,7 +139,28 @@ var betaInfo = [{
   "sequence_type": "cycle",
   "start_day": 21,
     "personal_hint": "your personal instructions"
-}];
+},
+{
+  "email": "andrew@dailytokn.com",
+  "first_name": "Andrew",
+  "sequence_type": "universe",
+  "start_day": 1,
+  "personal_hint": ""
+  },
+  {
+    "email": "themightygaby@dailytokn.com",
+    "first_name": "Gaby",
+    "sequence_type": "cycle",
+    "pack_sequence": [
+      {
+        "first_pack": "pomelo",
+        "second_pack": "orange",
+        "third_pack": "lime",
+        "fourth_pack": "blah"
+      }],
+      "personal_hint": ""
+    }
+  ];
 
 // var val = "something";
 // // var index = betaInfo.findIndex(function(item, i){
