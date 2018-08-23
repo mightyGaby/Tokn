@@ -28,8 +28,8 @@ var betaBabes =  ["aderonke.adedokun@gmail.com",
 "raissanfg@gmail.com",""];
 
 var betaInfo = [{
-  "email": "",
-  "first_name": "Gaby",
+  "email": "abby.tracy2012@gmail.com",
+  "first_name": "Abby",
   "sequence_type": "cycle",
   "pack_sequence": 
     {
@@ -41,8 +41,125 @@ var betaInfo = [{
     "personal_hint": ""
   },
   {
-  "email": "themightygaby@gmail.com",
-  "first_name": "Gaby",
+    "email": "sedelste@gmail.com",
+    "first_name": "Shanleigh",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+    {
+      "email": "shonaliditz@gmail.com",
+      "first_name": "Shonali",
+      "sequence_type": "cycle",
+      "pack_sequence": 
+        {
+          "first_pack": "blah",
+          "second_pack": "orange",
+          "third_pack": "pomelo",
+          "fourth_pack": "lime"
+        },
+        "personal_hint": ""
+      },
+      {
+        "email": "tillywinx@gmail.com",
+        "first_name": "Tilly",
+        "sequence_type": "cycle",
+        "pack_sequence": 
+          {
+            "first_pack": "blah",
+            "second_pack": "orange",
+            "third_pack": "pomelo",
+            "fourth_pack": "lime"
+          },
+          "personal_hint": ""
+        },
+  {
+    "email": "raissanfg@gmail.com",
+    "first_name": "Raissa",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+  {
+    "email": "phirany.lim@gmail.com",
+    "first_name": "Phirany",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+  {
+    "email": "maxinenicolemua@gmail.com",
+    "first_name": "Maxine",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+  {
+    "email": "lundgren.jl@gmail.com",
+    "first_name": "Jessica",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+  {
+    "email": "Kimmah.shah@gmail.com",
+    "first_name": "Kimmah",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+  {
+    "email": "elizabethannbarton1@gmail.com",
+    "first_name": "Liz",
+    "sequence_type": "cycle",
+    "pack_sequence": 
+      {
+        "first_pack": "blah",
+        "second_pack": "orange",
+        "third_pack": "pomelo",
+        "fourth_pack": "lime"
+      },
+      "personal_hint": ""
+    },
+  {
+  "email": "amjordan92@gmail.com",
+  "first_name": "Alexis",
   "sequence_type": "cycle",
   "pack_sequence": 
     {
