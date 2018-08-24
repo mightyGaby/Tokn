@@ -204,9 +204,9 @@ function getInfo(email){
   } else if (betaInfo[index].start_day){
     start_day = betaInfo[index].start_day;
     if(sequence_type=="universe"){
-      content = '<p>' + first_name + ', your tokn sequence begins with pod: <strong>' + start_day + '</strong>, coinciding with the full moon and a burst of high energy.</p><p>Take one tokn a day. Tokn dosages sync with the yins and yangs of the moon cycle, harmonizing your body with those lunar frequencies.</p><p>Once you get your box, you can start enjoying tokn - no need to wait for the next cycle</p>';
+      content = '<p>' + first_name + ', your tokn sequence begins with <strong>pod' + start_day + '</strong>, coinciding with the full moon and a burst of high energy.</p><p>Take one tokn a day. Tokn dosages sync with the yins and yangs of the moon cycle, harmonizing your body with those lunar frequencies.</p><p>Once you get your box, you can start enjoying tokn - no need to wait for the next cycle</p>';
     } else {
-      content = '<p>' + first_name + ', your tokn sequence begins with pod: <strong>' + start_day + '</strong>.</p><p>Take one tokn a day. Each subsequent day until the pods are empty, tokn dosages will complement where you are in your cycle, whether you need to mellow out or exude vibrance.</p><p>Once you get your box, you can start enjoying tokn - no need to wait for your next cycle.</p>';
+      content = '<p>' + first_name + ', your tokn sequence begins with <strong>pod' + start_day + '</strong>.</p><p>Take one tokn a day. Each subsequent day until the pods are empty, tokn dosages will complement where you are in your cycle, whether you need to mellow out or exude vibrance.</p><p>Once you get your box, you can start enjoying tokn - no need to wait for your next cycle.</p>';
     }
   }
 
