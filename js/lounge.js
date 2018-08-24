@@ -53,7 +53,7 @@ var betaInfo = [{
       "email": "shonaliditz@gmail.com",
       "first_name": "Shonali",
       "sequence_type": "cycle",
-      "start_day": 13,
+      "start_day": 12,
       "personal_hint": ""
       },
       {
