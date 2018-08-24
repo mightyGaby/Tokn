@@ -199,14 +199,14 @@ function getInfo(email){
     sequence_type = betaInfo[index].sequence_type;
   if (betaInfo[index].pack_sequence){
     pack_sequence.push(betaInfo[index].pack_sequence);
-    content = '<p>' + first_name + ', in your box you will find 4 dosettes: Pomelo for that mystical part of the month when your cycle starts, lime for your fertile days, orange for the calm before the storm, and white for that "blah" week before your period starts. Each dosette contains tokn dosages that harmonize with where you are in your cycle. </p><p>Your personal sequence is: ' + pack_sequence[0][0].first_pack + ', followed by ' + pack_sequence[0][0].second_pack + ', then ' + pack_sequence[0][0].third_pack + ' and finally ' + pack_sequence[0][0].fourth_pack + '.</p>';
+    content = '<p>' + first_name + ', in your box you will find 4 dosettes: Pomelo for that mystical part of the month when your cycle starts, lime for your fertile days, orange for the calm before the storm, and white for that "blah" week before your period starts. Each dosette contains tokn dosages that harmonize with where you are in your cycle. </p><p>Take one tokn a day. Your personal sequence is: ' + pack_sequence[0][0].first_pack + ', followed by ' + pack_sequence[0][0].second_pack + ', then ' + pack_sequence[0][0].third_pack + ' and finally ' + pack_sequence[0][0].fourth_pack + '.</p>';
 
   } else if (betaInfo[index].start_day){
     start_day = betaInfo[index].start_day;
     if(sequence_type=="universe"){
-      content = '<p>' + first_name + ', your tokn sequence begins with pod: ' + start_day + ', coinciding with the full moon and a burst of high energy.</p><p>Tokn dosages sync with the yins and yangs of the moon cycle, harmonizing your body with those lunar frequencies.</p>';
+      content = '<p>' + first_name + ', your tokn sequence begins with pod: ' + start_day + ', coinciding with the full moon and a burst of high energy.</p><p>Take one tokn a day. Tokn dosages sync with the yins and yangs of the moon cycle, harmonizing your body with those lunar frequencies.</p>';
     } else {
-      content = '<p>' + first_name + ', your tokn sequence begins with pod: ' + start_day + '.</p><p>Each subsequent day until the pods are empty, tokn dosages will complement where you are in your cycle, whether you need to mellow out or exude vibrance.</p>';
+      content = '<p>' + first_name + ', your tokn sequence begins with pod: ' + start_day + '.</p><p>Take one tokn a day. Each subsequent day until the pods are empty, tokn dosages will complement where you are in your cycle, whether you need to mellow out or exude vibrance.</p>';
     }
   }
 
