@@ -82,10 +82,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "lime",
-        "second_pack": "white",
-        "third_pack": "pomelo",
-        "fourth_pack": "orange"
+        "first_pack": "white",
+        "second_pack": "pomelo",
+        "third_pack": "orange",
+        "fourth_pack": "lime"
       }],
       "personal_hint": ""
     },
