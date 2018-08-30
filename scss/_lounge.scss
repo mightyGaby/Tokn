@@ -1,12 +1,12 @@
-body.beta-lounge h1, h4, h5, h2, h6{
+.beta-lounge h1, h4, h5, h2, h6{
   font-family: 'cardo', serif;
 }
 
-body.beta-lounge h2, h6{
+.beta-lounge h2, h6{
   font-style: italic
 }
 
-body.beta-lounge p {
+.beta-lounge p {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 .beta-lounge {
@@ -21,7 +21,7 @@ body.beta-lounge p {
   background-color: rgba(33,37,41,.5)
 }
 
-body.beta-lounge #instructions {
+.beta-lounge #instructions {
 /*background-color: #edefee;*/
   padding-top: 70px;
   padding-bottom: 70px;

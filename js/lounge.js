@@ -69,10 +69,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "pomelo",
-        "second_pack": "orange",
-        "third_pack": "lime",
-        "fourth_pack": "white"
+        "first_pack": "pomelo - start 8/26",
+        "second_pack": "orange - start 9/2",
+        "third_pack": "lime - start 9/9",
+        "fourth_pack": "white - start 9/16"
       }],
       "personal_hint": ""
     },
@@ -82,10 +82,10 @@ var betaInfo = [{
     "sequence_type": "cycle",
     "pack_sequence": [
       {
-        "first_pack": "white",
-        "second_pack": "pomelo",
-        "third_pack": "orange",
-        "fourth_pack": "lime"
+        "first_pack": "pomelo - start 8/24",
+        "second_pack": "orange - start 8/30",
+        "third_pack": "lime - start 9/6",
+        "fourth_pack": "white - start 9/13"
       }],
       "personal_hint": ""
     },
