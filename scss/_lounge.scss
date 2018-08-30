@@ -1,12 +1,12 @@
-h1, h4, h5, h2, h6{
+body.beta-lounge h1, h4, h5, h2, h6{
   font-family: 'cardo', serif;
 }
 
-h2, h6{
+body.beta-lounge h2, h6{
   font-style: italic
 }
 
-p {
+body.beta-lounge p {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 .beta-lounge {
@@ -21,7 +21,7 @@ p {
   background-color: rgba(33,37,41,.5)
 }
 
-#instructions {
+body.beta-lounge #instructions {
 /*background-color: #edefee;*/
   padding-top: 70px;
   padding-bottom: 70px;
@@ -32,7 +32,7 @@ p {
   border-color: #0a0f0f;
 }
 
-#password input {
+body.beta-lounge #password input {
   margin-top: 35%;
   width: 350px;
 }
