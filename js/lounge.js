@@ -27,7 +27,8 @@ var betaBabes =  ["aderonke.adedokun@gmail.com",
 "jlf4689@gmail.com",
 "raissanfg@gmail.com",
 "themightygaby@dailytokn.com",
-"andrew@dailytokn.com"];
+"andrew@dailytokn.com",
+"debra@designdance.net"];
 
 var betaInfo = [{
   "email": "abby.tracy2012@gmail.com",
@@ -161,7 +162,20 @@ var betaInfo = [{
         "fourth_pack": "white"
       }],
       "personal_hint": ""
-    }];
+    },
+    {
+      "email": "debra@designdance.net",
+      "first_name": "Deb",
+      "sequence_type": "cycle",
+      "pack_sequence": [
+        {
+          "first_pack": "white",
+          "second_pack": "pomelo",
+          "third_pack": "orange",
+          "fourth_pack": "lime"
+        }],
+        "personal_hint": "since your cycle is longer, feel free to mix in the orange pack in between your period and ovulation, but make sure that you take the white before menstruating and the pomello during menstruation."
+      }];
 
 // var val = "something";
 // // var index = betaInfo.findIndex(function(item, i){
@@ -199,8 +213,10 @@ function getInfo(email){
     sequence_type = betaInfo[index].sequence_type;
   if (betaInfo[index].pack_sequence){
     pack_sequence.push(betaInfo[index].pack_sequence);
-    content = '<p>' + first_name + ', in your box you will find 4 dosettes: Pomelo for that mystical part of the month when your cycle starts, lime for your fertile days, orange for the calm before the storm, and white for that "blah" week before your period starts. Each dosette contains tokn dosages that harmonize with where you are in your cycle. </p><p>Once you get your box, you can start enjoying tokn by following the sequence below - no need to wait for your next cycle.</p><p>Take one tokn a day. Your personal sequence is: <strong>' + pack_sequence[0][0].first_pack + '</strong>, followed by <strong>' + pack_sequence[0][0].second_pack + '</strong>, then <strong>' + pack_sequence[0][0].third_pack + '</strong> and finally <strong>' + pack_sequence[0][0].fourth_pack + '</strong>.</p>';
-
+    content = '<p>' + first_name + ', in your box you will find 4 dosettes: Pomelo for that mystical part of the month when your cycle starts, lime for your fertile days, orange for the calm before the storm, and white for that "blah" week before your period starts. Each dosette contains tokn dosages that harmonize with where you are in your cycle. </p><p>Once you get your box, you can start enjoying tokn by following the sequence below - no need to wait for your next cycle.</p><p>Take one tokn a day, and start at the stars. Your personal sequence is: <strong>' + pack_sequence[0][0].first_pack + '</strong>, followed by <strong>' + pack_sequence[0][0].second_pack + '</strong>, then <strong>' + pack_sequence[0][0].third_pack + '</strong> and finally <strong>' + pack_sequence[0][0].fourth_pack + '</strong>.</p>';
+    if(betaInfo[index].personal_hint){
+      content += '<br><p>One more thing, '+ betaInfo[index].personal_hint + '</p>';
+    }
   } else if (betaInfo[index].start_day){
     start_day = betaInfo[index].start_day;
     if(sequence_type=="universe"){
