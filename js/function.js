@@ -62,11 +62,10 @@ function register($form) {
         success     : function(data) {
             if (data.result != "success") {
               console.log(data.msg);
-              $form[0].reset();
-              $("#nextStepsModal").modal('show');
             } else {
               console.log(data.msg) 
-                console.log('yay!')
+              $form[0].reset();
+              $("#nextStepsModal").modal('show');
             }
         }
     });
