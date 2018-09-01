@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>tokn</title>
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public/creative.min.css" rel="stylesheet">
+
+    <!-- Google domain header -->
+    <meta name="google-site-verification" content="gzfnqOLc7CHZ3CBqKn42zThq9R-hgAKRmo_LGZ3jMMQ" />
+
+  </head>
+
+  <body class="beta-lounge" id="page-top">
+    <div id="password">
+      <div class="container text-center mb-auto mt-2">
+        <div class="row">
+          <div class="col-sm-6 mb-auto mx-auto text-center">
+            <input placeholder="your e-mail address please" type="text"></input>
+            </br>
+            <p class="errormsg text-light"></p>
+            <a class="btn btn-light text-center my-5" onclick="enterEmail();">Enter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="beta-lounge" class="reserve">
+      <header class="text-center text-white d-flex">
+        <div class="reserve container mb-auto mt-2">
+          <div class="row">
+            <div class="col-lg-10 mb-auto mx-auto">
+              <h1 class="">tokn</h1>
+              <h2 class="section-heading">Beta Society Lounge</h2>
+              <img src="img/logo_white.png" class="" width="50" height="50"/>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="instructions" class="my-5 container col-lg-8">
+         <!-- personalized instructions -->
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+          <h4 id="greeting"></h4>
+          <p>
+            to the web-bound manifestation of the Beta Lounge.  Take a look around. Familiarize yourself with the beta experience.
+          </p>
+           <div id="personal-instructions">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <img src="img/logo_half_moon_up.png" class="my-3" width="auto" height="25"/>
+            <h4>
+            A few extra tips to ensure your best life this cycle:
+            </h4>
+          </div>
+        </div>
+<!--         <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h5 class="my-3">Start at the start.</h5>
+            <p>Once you’ve received your Beta Box, above to guide you through your unique dosette sequence.
+            </p>
+           </div>
+         </div> -->
+<!--          <div class="row">
+          <div class="col-lg-8 mx-auto text-center"> 
+              <h5 class="my-3">Look to the stars.</h5>
+              <p>
+                Your dosettes come preset to the starting tokn of each week (marked by a blanket of edible stars).  Simply press the center button to advance to the next tokn and wind your way around the dosette.
+              </p>
+            </div>
+          </div> -->
+          <div class="row">
+           <div class="col-lg-8 mx-auto text-center"> 
+      <h5 class="my-3">Consume with a fatty.</h5>
+      <p>
+        No, not a monster joint. CBD is best absorbed by the body when paired with an Omega-3. Consider a tokn with your daily dose of fish or mct oil, flax or chia seeds, walnuts, soy, or your nightly blini and caviar.
+      </p>
+        </div>
+      </div>
+          <div class="row">
+           <div class="col-lg-8 mx-auto text-center"> 
+      <h5 class="my-3">Low and Slow.</h5>
+      <p>
+        It can take a few days of consistent use to feel the effects of CBD. You should expect a calm, focused, slightly euphoric feeling - but not a feeling of being "high." Remember, you are different each day, so the dosage will match how your body is, and with your first kit we follow the golden rule with respect to dosage and build up: Start low and go slow.
+      </p>
+        </div>
+      </div>
+        <div class="row">
+         <div class="col-lg-8 mx-auto text-center"> 
+        <h5 class="my-3">Check in with yourself.</h5>
+       <p>
+        We certainly want to know how you're feeling, so expect a few check-in surveys from us. But more importantly, survey your own body and mind. How is CBD jiving with your natural rhythm? Or as Joey might inquire “how you doin’?”
+        </p>
+        </div>
+      </div>
+        <div class="row">
+         <div class="col-lg-8 mx-auto text-center"> 
+        <h5 class="my-3">Honor your sparkle.</h5>
+       <p>
+        Remember, tokn isn’t about ‘correcting’. We hope each daily tokn is a reminder to appreciate who you are in that moment.
+        </p>
+        <img src="img/logo_half_moon_down.png" class="my-3" width="auto" height="25"/>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+          <small>
+          <strong>Footer stuff</strong><br>
+          <p>We hate fine print, but sometimes it's unavoidable.
+          Participants in the Tokn Beta Society accept this Nondisclosure Agreement and Waiver of Liability (the "Agreement") for the purposes of preventing the unauthorized disclosure of Confidential Information and releasing Tokn and its founders from all liability resulting from the participation in related activities. The parties agree to enter into a confidential relationship with respect to the disclosure of certain proprietary and confidential information.</p>
+        <p>
+          Waiver. The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.
+        </p>
+        <p>
+        (A) I WAIVE, RELEASE, AND DISCHARGE from any and all liability, including but not limited to, liability arising from the negligence or fault of the entities or persons released, for my death, disability, personal injury, or resulting effects of any kind which may hereafter occur to me, THE FOLLOWING ENTITIES OR PERSONS: Daily Tokn, Inc., Panda Health, Inc. and/or their directors, officers, employees, representatives, and agents.
+        </p>
+        <p>
+        (B) INDEMNIFY, HOLD HARMLESS, AND PROMISE NOT TO SUE the entities or persons mentioned in this paragraph from any and all liabilities or claims made as a result of participation in this activity, whether caused by the negligence of release or otherwise. 
+        </p>
+        <p>
+        This Agreement and each party's obligations shall be binding on the representatives, assigns, and successors of such party. 
+        </p>
+
+        </small>
+       </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-8">
+        <small> &#169; Copyright tokn 2018</small>
+      </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="public/creative.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/lounge.js"></script>
+
+  </body>
+
+</html>
+
