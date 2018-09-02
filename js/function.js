@@ -62,10 +62,12 @@ function register($form) {
         success     : function(data) {
             if (data.result != "success") {
               console.log(data.msg);
+              $('#waitlist-alert').text(data.msg).addClass('alert-warning');
             } else {
               console.log(data.msg) 
               $form[0].reset();
               $("#nextStepsModal").modal('show');
+              $('#waitlist-alert').alert('dispose');
             }
         }
     });
