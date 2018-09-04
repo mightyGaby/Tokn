@@ -145,7 +145,7 @@ footer {
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/mastheadsun.png");
+  background-image: url("../img/palms-tropical.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -155,7 +155,8 @@ header.masthead {
     margin-top: 30px;
     margin-bottom: 30px; }
   header.masthead h1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-family: 'cardo', serif; }
   header.masthead p {
     font-weight: 300; }
   @media (min-width: 768px) {

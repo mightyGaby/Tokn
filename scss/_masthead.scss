@@ -2,7 +2,7 @@
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/mastheadsun.png');
+  background-image: url('../img/palms-tropical.jpg');
   background-position: center center;
   @include background-cover;
   hr {
@@ -11,6 +11,7 @@ header.masthead {
   }
   h1 {
     font-size: 2rem;
+    font-family: 'cardo', serif;
   }
   p {
     font-weight: 300;
