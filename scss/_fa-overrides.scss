@@ -12,6 +12,6 @@
 
 /*icons on secondary background*/
 
-/*.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
-  -webkit-text-stroke: 2px $secondary;
-}*/
+.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
+  -webkit-text-stroke: 2px $primary;
+}

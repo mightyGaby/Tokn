@@ -280,9 +280,9 @@ h1 {
   -webkit-text-stroke: 3px white; }
 
 /*icons on secondary background*/
-/*.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
-  -webkit-text-stroke: 2px $secondary;
-}*/
+.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
+  -webkit-text-stroke: 2px #b2dcc6; }
+
 #mc-embedded-subscribe-form input[type=checkbox] {
   display: inline;
   width: auto;
