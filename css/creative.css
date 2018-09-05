@@ -145,7 +145,8 @@ footer {
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/desert-dance.jpg");
+  /*  background-image: url('../img/desert-dance.jpg');
+*/
   background-position: bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
