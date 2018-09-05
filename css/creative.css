@@ -145,7 +145,8 @@ footer {
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/mastheadsun.png");
+  /*  background-image: url('../img/mastheadsun.png');
+*/
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -161,6 +162,9 @@ header.masthead {
   @media (min-width: 768px) {
     header.masthead p {
       font-size: 1.15rem; } }
+  header.masthead img {
+    max-height: 100px;
+    padding: 20px; }
   @media (min-width: 992px) {
     header.masthead {
       height: 100vh;
@@ -169,7 +173,10 @@ header.masthead {
       padding-bottom: 0;
       padding-top: 8rem; }
       header.masthead h1 {
-        font-size: 3rem; } }
+        font-size: 3rem; }
+      header.masthead img {
+        min-height: 100px;
+        max-height: 350px; } }
   @media (min-width: 1200px) {
     header.masthead h1 {
       font-size: 4rem; } }
@@ -230,6 +237,9 @@ header.masthead {
       background: rgba(178, 220, 198, 0.7); }
     .portfolio-box:focus {
       outline: none; } }
+
+h1 {
+  font-family: 'cardo', serif; }
 
 .text-primary {
   color: #b2dcc6 !important; }

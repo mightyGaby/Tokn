@@ -2,8 +2,8 @@
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/mastheadsun.png');
-  background-position: center center;
+/*  background-image: url('../img/mastheadsun.png');
+*/  background-position: center center;
   @include background-cover;
   hr {
     margin-top: 30px;
@@ -20,6 +20,10 @@ header.masthead {
       font-size: 1.15rem;
     }
   }
+  img {
+    max-height: 100px;
+    padding: 20px;
+  }
   @media (min-width: 992px) {
     height: 100vh;
     min-height: 650px;
@@ -28,6 +32,10 @@ header.masthead {
     padding-top: 8rem;
     h1 {
       font-size: 3rem;
+    }
+    img {
+      min-height: 100px;
+      max-height: 350px;
     }
   }
   @media (min-width: 1200px) {
