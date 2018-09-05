@@ -270,9 +270,9 @@ header.masthead {
   -webkit-text-stroke: 3px white; }
 
 /*icons on secondary background*/
-.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
-  -webkit-text-stroke: 2px #cddbfc; }
-
+/*.fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
+  -webkit-text-stroke: 2px $secondary;
+}*/
 #mc-embedded-subscribe-form input[type=checkbox] {
   display: inline;
   width: auto;
