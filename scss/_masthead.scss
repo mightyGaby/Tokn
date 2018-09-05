@@ -2,10 +2,11 @@
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/palms-tropical.jpg');
-  background-position: center center;
+  background-image: url('../img/desert-dance.jpg');
+  background-position: bottom center;
   @include background-cover;
-  hr {
+  background-repeat: no-repeat;
+ hr {
     margin-top: 30px;
     margin-bottom: 30px;
   }
