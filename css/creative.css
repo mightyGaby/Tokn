@@ -52,7 +52,7 @@ section {
 
 ::-moz-selection {
   color: #fff;
-  background: #212529;
+  background: #395d5d;
   text-shadow: none; }
 
 ::selection {
@@ -72,7 +72,7 @@ body {
   -webkit-tap-highlight-color: #cddbfc; }
 
 #mainNav {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  border-bottom: 1px solid rgba(57, 93, 93, 0.1);
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
@@ -90,7 +90,7 @@ body {
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #212529; }
+    color: #395d5d; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
       color: #b2dcc6; }
@@ -118,7 +118,7 @@ body {
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
           color: #fff; }
       #mainNav.navbar-shrink {
-        border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+        border-bottom: 1px solid rgba(57, 93, 93, 0.1);
         background-color: #fff; }
         #mainNav.navbar-shrink .navbar-brand {
           color: #b2dcc6; }
@@ -128,7 +128,7 @@ body {
             display: inline-block; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #212529; }
+          color: #395d5d; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #b2dcc6; } }
@@ -144,7 +144,7 @@ footer {
 
 header.masthead {
   padding-top: 6rem;
-  padding-bottom: calc(10rem - 56px);
+  padding-bottom: 0;
   /*  background-image: url('../img/mastheadsun.png');
 */
   background-position: center center;
@@ -167,7 +167,7 @@ header.masthead {
     padding: 20px; }
   @media (min-width: 992px) {
     header.masthead {
-      height: 100vh;
+      /*height: 100vh;*/
       min-height: 650px;
       padding-top: 0;
       padding-bottom: 0;
@@ -281,7 +281,7 @@ h1 {
 
 /*icons on secondary background*/
 .fa-snowflake-o:before, .fa-spinner:before, .fa-moon-o:before, .fa-meh-o:before {
-  -webkit-text-stroke: 2px #b2dcc6; }
+  -webkit-text-stroke: 2px #cddbfc; }
 
 #mc-embedded-subscribe-form input[type=checkbox] {
   display: inline;
