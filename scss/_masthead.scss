@@ -3,6 +3,7 @@ header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url('../img/desert-dance.jpg');
+  background-color: tomato;
   background-position: bottom center;
   @include background-cover;
   background-repeat: no-repeat;
@@ -16,6 +17,9 @@ header.masthead {
   }
   p {
     font-weight: 300;
+  }
+  ul {
+    list-style: none;
   }
   @media (min-width: 768px) {
     p {
@@ -74,9 +78,9 @@ header.masthead {
       color: #fff;
       animation: titleAnimation 36s linear infinite 0s; 
   }
-  .cb-slideshow li div h3 { 
-      font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-      font-size: 240px;
+  .cb-slideshow li div p { 
+/*      font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+*/      font-size: 80px;
       padding: 0;
       line-height: 200px; 
   }
@@ -101,7 +105,7 @@ header.masthead {
       animation-delay: 24s; 
   }
   .cb-slideshow li:nth-child(6) span { 
-      background-image: url(../images/down/tired.jpg);
+      background-image: url(../images/down/vulnerable.jpg);
       animation-delay: 30s; 
   }
 
@@ -129,11 +133,11 @@ header.masthead {
       100% { opacity: 0 }
   }
 
-/*  @keyframes titleAnimation { 
+  @keyframes titleAnimation { 
       0% { opacity: 0 }
       8% { opacity: 1 }
       17% { opacity: 1 }
       19% { opacity: 0 }
       100% { opacity: 0 }
-  }*/
+  }
 }

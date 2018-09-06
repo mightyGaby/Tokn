@@ -146,6 +146,7 @@ header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/desert-dance.jpg");
+  background-color: tomato;
   background-position: bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -153,14 +154,7 @@ header.masthead {
   background-size: cover;
   background-repeat: no-repeat;
   /*slideshow
-*/
-  /*  @keyframes titleAnimation { 
-      0% { opacity: 0 }
-      8% { opacity: 1 }
-      17% { opacity: 1 }
-      19% { opacity: 0 }
-      100% { opacity: 0 }
-  }*/ }
+*/ }
   header.masthead hr {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -169,6 +163,8 @@ header.masthead {
     font-family: 'cardo', serif; }
   header.masthead p {
     font-weight: 300; }
+  header.masthead ul {
+    list-style: none; }
   @media (min-width: 768px) {
     header.masthead p {
       font-size: 1.15rem; } }
@@ -217,9 +213,10 @@ header.masthead {
     opacity: 0;
     color: #fff;
     animation: titleAnimation 36s linear infinite 0s; }
-  header.masthead .cb-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 240px;
+  header.masthead .cb-slideshow li div p {
+    /*      font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+*/
+    font-size: 80px;
     padding: 0;
     line-height: 200px; }
   header.masthead .cb-slideshow li:nth-child(1) span {
@@ -237,7 +234,7 @@ header.masthead {
     background-image: url(../img/selves/up/energetic.jpg);
     animation-delay: 24s; }
   header.masthead .cb-slideshow li:nth-child(6) span {
-    background-image: url(../images/down/tired.jpg);
+    background-image: url(../images/down/vulnerable.jpg);
     animation-delay: 30s; }
   header.masthead .cb-slideshow li:nth-child(2) div {
     animation-delay: 6s; }
@@ -260,6 +257,18 @@ header.masthead {
   17% {
     opacity: 1; }
   25% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0; }
+  8% {
+    opacity: 1; }
+  17% {
+    opacity: 1; }
+  19% {
     opacity: 0; }
   100% {
     opacity: 0; } }
