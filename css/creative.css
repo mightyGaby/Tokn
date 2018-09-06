@@ -145,14 +145,22 @@ footer {
 header.masthead {
   padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
-  /*  background-image: url('../img/desert-dance.jpg');
-*/
+  background-image: url("../img/desert-dance.jpg");
   background-position: bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /*slideshow
+*/
+  /*  @keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+      19% { opacity: 0 }
+      100% { opacity: 0 }
+  }*/ }
   header.masthead hr {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -166,6 +174,9 @@ header.masthead {
       font-size: 1.15rem; } }
   @media (min-width: 992px) {
     header.masthead {
+      /*    background-image: url('../img/selves/up/amused.jpg');
+*/
+      background-position: bottom center;
       height: 100vh;
       min-height: 650px;
       padding-top: 0;
@@ -176,6 +187,82 @@ header.masthead {
   @media (min-width: 1200px) {
     header.masthead h1 {
       font-size: 4rem; } }
+  header.masthead .cb-slideshow,
+  header.masthead .cb-slideshow:after {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; }
+  header.masthead .cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; }
+  header.masthead .cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s; }
+  header.masthead .cb-slideshow li div h3 {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px; }
+  header.masthead .cb-slideshow li:nth-child(1) span {
+    background-image: url(../img/selves/up/dgaf.jpg); }
+  header.masthead .cb-slideshow li:nth-child(2) span {
+    background-image: url(../img/selves/down/anxious.jpg);
+    animation-delay: 6s; }
+  header.masthead .cb-slideshow li:nth-child(3) span {
+    background-image: url(../img/selves/up/joyous.jpg);
+    animation-delay: 12s; }
+  header.masthead .cb-slideshow li:nth-child(4) span {
+    background-image: url(../img/selves/down/timid.jpg);
+    animation-delay: 18s; }
+  header.masthead .cb-slideshow li:nth-child(5) span {
+    background-image: url(../img/selves/up/energetic.jpg);
+    animation-delay: 24s; }
+  header.masthead .cb-slideshow li:nth-child(6) span {
+    background-image: url(../images/down/tired.jpg);
+    animation-delay: 30s; }
+  header.masthead .cb-slideshow li:nth-child(2) div {
+    animation-delay: 6s; }
+  header.masthead .cb-slideshow li:nth-child(3) div {
+    animation-delay: 12s; }
+  header.masthead .cb-slideshow li:nth-child(4) div {
+    animation-delay: 18s; }
+  header.masthead .cb-slideshow li:nth-child(5) div {
+    animation-delay: 24s; }
+  header.masthead .cb-slideshow li:nth-child(6) div {
+    animation-delay: 30s; }
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in; }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out; }
+  17% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 
 .service-box {
   max-width: 400px; }
