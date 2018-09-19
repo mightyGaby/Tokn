@@ -37,14 +37,16 @@
 // })(jQuery); // End of use strict
 
 $(document).ready( function () {
-  console.log('mailchimp!')
+    console.log('mailchimp!');
+
     // I only have one form on the page but you can be more specific if need be.
     var $form = $('form');
         $('form input[type="submit"]').bind('click', function ( event ) {
           event.preventDefault();
             // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+            getWaitlistCount();
 
-            register($form)
+            //register($form)
             //if ( validate_input($form) ) { register($form); }
         });
 });
@@ -62,6 +64,7 @@ function register($form) {
         success     : function(data) {
             if (data.result != "success") {
               console.log(data.msg);
+              console.log(data);
               $('#waitlist-alert').text(data.msg).addClass('alert-warning');
             } else {
               console.log(data.msg) 
@@ -72,4 +75,5 @@ function register($form) {
         }
     });
 }
+
 
