@@ -108,7 +108,7 @@ var betaInfo = [{
     "email": "lundgren.jl@gmail.com",
     "first_name": "Jessica",
     "sequence_type": "cycle",
-    "start_day": 11,
+    "start_day": "1, starting on September 19. The dosages leading up to pod 6 are higher to complement any PMS symptoms you typically experience",
     "personal_hint": ""
     },
   {
@@ -144,13 +144,6 @@ var betaInfo = [{
   "start_day": 24,
     "personal_hint": "your personal instructions"
 },
-{
-  "email": "andrew@dailytokn.com",
-  "first_name": "Andrew",
-  "sequence_type": "universe",
-  "start_day": 1,
-  "personal_hint": ""
-  },
   {
     "email": "themightygaby@dailytokn.com",
     "first_name": "Gaby",
