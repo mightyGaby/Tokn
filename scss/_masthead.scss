@@ -3,8 +3,9 @@ header.masthead {
   padding-top: 6rem;
   padding-bottom: 0;
   background-position: center center;
-
+  @include sans-serif-font;
   @include background-cover;
+  
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -18,6 +19,8 @@ header.masthead {
   p {
     font-weight: 300;
   }
+
+
   @media (min-width: 768px) {
     p {
       font-size: 1.15rem;

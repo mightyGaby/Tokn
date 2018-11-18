@@ -9,7 +9,9 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  background-image: url("../img/annie-spratt-760345-unsplash.jpg");
+  background-size: cover; }
 
 hr {
   max-width: 50px;
@@ -113,10 +115,10 @@ body {
         padding: 0.5rem 1rem; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: rgba(255, 255, 255, 0.7); }
-        #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-        #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: #fff; }
+        /*      color: fade-out($white, .3);
+      &:hover {
+        color: $white;
+      }*/ }
       #mainNav.navbar-shrink {
         border-bottom: 1px solid rgba(57, 93, 93, 0.1);
         background-color: #fff; }
@@ -146,6 +148,7 @@ header.masthead {
   padding-top: 6rem;
   padding-bottom: 0;
   background-position: center center;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -242,6 +245,9 @@ header.masthead {
 .text-primary {
   color: #9FD0B6 !important; }
 
+.form-group {
+  display: inline-block; }
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -300,7 +306,7 @@ header.masthead {
 #mc_embed_signup input {
   text-align: left; }
 
-.beta-lounge h1, h4, h5, h2, h6 {
+.beta-lounge h1, h5, h2, h6 {
   font-family: 'cardo', serif; }
 
 .beta-lounge h2, h6 {

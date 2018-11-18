@@ -7,6 +7,8 @@ html {
 
 body {
   @include serif-font;
+  background-image: url("../img/annie-spratt-760345-unsplash.jpg");
+  background-size: cover;
 }
 
 hr {
