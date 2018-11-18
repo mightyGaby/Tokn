@@ -2,15 +2,18 @@
 header.masthead {
   padding-top: 6rem;
   padding-bottom: 0;
-/*  background-image: url('../img/mastheadsun.png');
-*/  background-position: center center;
+  background-position: center center;
+
   @include background-cover;
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  h1 {
-    font-size: 2rem;
+  h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $secondary;
+    @include sans-serif-font;
   }
   p {
     font-weight: 300;

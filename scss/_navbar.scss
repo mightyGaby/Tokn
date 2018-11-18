@@ -11,7 +11,7 @@
     @include sans-serif-font;
     &:focus,
     &:hover {
-      color: darken($primary, .1);
+      color: $secondary;
     }
   }
   .navbar-nav {
@@ -39,10 +39,10 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: rgba($white, 0);
+      color: $primary;
       &:focus,
       &:hover {
-        color: $white;
+        color: $secondary;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -62,7 +62,7 @@
         color: $primary;
         &:focus,
         &:hover {
-          color: darken($primary, .1);
+          color: $secondary;
         }
         .logo {
           display: inline-block;
