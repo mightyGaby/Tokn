@@ -54,7 +54,7 @@ $(document).ready( function () {
 function register($form) {
 
     $.ajax({
-        type: '$form.attr('method')',
+        type: $form.attr('method'),
         url: $form.attr('action'),
         data: $form.serialize(),
         cache       : false,
