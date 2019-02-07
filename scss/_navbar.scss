@@ -7,11 +7,11 @@
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: $primary;
+    color: #F9F9F1;
     @include sans-serif-font;
     &:focus,
     &:hover {
-      color: darken($primary, .1);
+      color: darken(#F9F9F1, .1);
     }
   }
   .navbar-nav {
@@ -21,9 +21,9 @@
         font-size: .9rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-900;
+        color: #228866;
         &:hover {
-          color: $primary;
+          color: #228866;
         }
         &.active {
           color: $primary !important;
@@ -39,10 +39,10 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: rgba($white, 0);
+      color: #F9F9F1;
       &:focus,
       &:hover {
-        color: $white;
+        color: #228866;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -50,16 +50,16 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      color: #F9F9F1;
       &:hover {
-        color: $white;
+        color: #228866;
       }
     }
     &.navbar-shrink {
       border-bottom: 1px solid fade-out($gray-900, .9);
-      background-color: $white;
+      background-color: #F9F9F1;
       .navbar-brand {
-        color: $primary;
+        color: #228866;
         &:focus,
         &:hover {
           color: darken($primary, .1);
@@ -70,7 +70,7 @@
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: $gray-900;
+        color: #228866;
         &:hover {
           color: $primary;
         }

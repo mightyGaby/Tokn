@@ -1,0 +1,73 @@
+header.splash {
+	height: 100%;
+	background-color: #ffff;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('../img/leaf.jpg');
+	background-repeat: no-repeat;
+	h2 {
+		font-family: 'Shrikhand', cursive;
+		color: #9FD0B6;
+		margin-bottom: 40px;
+	}
+	p {
+		color: #228866;
+		font-size: 16px;
+	}
+
+	.waitlist {
+		font-size: 14px;
+	}
+
+	img {
+		max-width: 100px;
+	}
+	#mc_embed_signup {
+		.button {
+			background-color: #228866;
+			color: white;
+			margin: 0 auto;
+		}
+		.mc-field-group input {
+			background-color: white;
+			border-color: white;
+			color: #228866;
+			padding: 8px 0;
+			text-indent: 2%;
+			&::placeholder {
+			  color: #228866;
+			}
+			&:focus{
+				outline-color: #228866;
+				outline-width: 1;
+				outline-width: thin;
+			}
+		}
+	}
+
+	#mc-embedded-subscribe-form div.mce_inline_error {
+		background-color: #9FD0B6;
+		color: white;
+	}
+
+	@media (min-width: 768px) {
+		#mc_embed_signup {
+		background-color:#F9F9F1;;
+		.button {
+			background-color: #228866;
+			color: white;
+			margin: 0 auto;
+		}
+	}
+
+	}
+
+
+/*	#mc_embed_signup{clear:left; font:14px Montserrat,Helvetica,sans-serif; }
+	input[type=text] {
+		border:none;
+	}
+	#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
+	#mergeRow-gdpr {margin-top: 20px;}
+	#mergeRow-gdpr fieldset label {font-weight: normal;}
+	#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}*/
+}

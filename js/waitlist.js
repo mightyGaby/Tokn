@@ -44,17 +44,17 @@ $(document).ready( function () {
         $('form input[type="submit"]').bind('click', function ( event ) {
           event.preventDefault();
             // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
-            getWaitlistCount();
-
-            //register($form)
-            //if ( validate_input($form) ) { register($form); }
+            // getWaitlistCount();
+            console.log('submit');
+            register($form)
+            // if ( validate_input($form) ) { register($form); }
         });
 });
 
 function register($form) {
 
     $.ajax({
-        type: $form.attr('method'),
+        type: '$form.attr('method')',
         url: $form.attr('action'),
         data: $form.serialize(),
         cache       : false,
@@ -69,8 +69,8 @@ function register($form) {
             } else {
               console.log(data.msg) 
               $form[0].reset();
-              $("#nextStepsModal").modal('show');
-              $('#waitlist-alert').alert('dispose');
+              // $("#nextStepsModal").modal('show');
+              // $('#waitlist-alert').alert('dispose');
             }
         }
     });
