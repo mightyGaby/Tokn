@@ -30,50 +30,61 @@
       posting.done(function( data ) {
         console.log(data); 
         console.log(mailingList)
-        document.getElementById("waitlist").reset(); 
+        $("#waitlist").reset();
+        confetti();
       });
   });
 
 })(jQuery); // End of use strict
+    
+//confeti:
+function confetti(){
+  for (var i = 0; i < 250; i++) {
+  create(i);
+}
 
-// $(document).ready( function () {
-//     console.log('mailchimp!');
+function create(i) {
+  var width = Math.random() * 8;
+  var height = width * 0.4;
+  var colourIdx = Math.ceil(Math.random() * 3);
+  var colour = "red";
+  switch(colourIdx) {
+    case 1:
+      colour = "yellow";
+      break;
+    case 2:
+      colour = "blue";
+      break;
+    default:
+      colour = "red";
+  }
+  $('<div class="confetti-'+i+' '+colour+'"></div>').css({
+    "width" : width+"px",
+    "height" : height+"px",
+    "top" : -Math.random()*20+"%",
+    "left" : Math.random()*100+"%",
+    "opacity" : Math.random()+0.5,
+    "transform" : "rotate("+Math.random()*360+"deg)"
+  }).appendTo('.wrapper');  
+  
+  drop(i);
+}
 
-//     // I only have one form on the page but you can be more specific if need be.
-//     var $form = $('form');
-//         $('form input[type="submit"]').bind('click', function ( event ) {
-//           event.preventDefault();
-//             // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
-//             // getWaitlistCount();
-//             console.log('submit');
-//             register($form)
-//             // if ( validate_input($form) ) { register($form); }
-//         });
-// });
+function drop(x) {
+  $('.confetti-'+x).animate({
+    top: "100%",
+    left: "+="+Math.random()*15+"%"
+  }, Math.random()*3000 + 3000, function() {
+    reset(x);
+  });
+}
 
-// function register($form) {
-
-//     $.ajax({
-//         type: $form.attr('method'),
-//         url: $form.attr('action'),
-//         data: $form.serialize(),
-//         cache       : false,
-//         dataType    : 'json',
-//         contentType: "application/json; charset=utf-8",
-//         error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
-//         success     : function(data) {
-//             if (data.result != "success") {
-//               console.log(data.msg);
-//               console.log(data);
-//               $('#waitlist-alert').text(data.msg).addClass('alert-warning');
-//             } else {
-//               console.log(data.msg) 
-//               $form[0].reset();
-//               // $("#nextStepsModal").modal('show');
-//               // $('#waitlist-alert').alert('dispose');
-//             }
-//         }
-//     });
-// }
-
-
+function reset(x) {
+  $('.confetti-'+x).animate({
+    "top" : -Math.random()*20+"%",
+    "left" : "-="+Math.random()*15+"%"
+  }, 0, function() {
+    drop(x);             
+  });
+}
+}

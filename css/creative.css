@@ -350,3 +350,14 @@ header.splash {
         background-color: #228866;
         color: white;
         margin: 0 auto; } }
+  header.splash .wrapper {
+    position: relative;
+    min-height: 100vh; }
+  header.splash [class|="confetti"] {
+    position: absolute; }
+  header.splash .red {
+    background-color: #E94A3F; }
+  header.splash .yellow {
+    background-color: #FAA040; }
+  header.splash .blue {
+    background-color: #5FC9F5; }
